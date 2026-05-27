@@ -309,7 +309,7 @@ const Work = () => {
               Neurodocx
             </p>
             <p className='font-family-dm-sans lg:text-[16px] text-[14px] mt-2 mb-4 text-text font-medium w-[300px]'>
-              An AI-powered MRI diagnosis system for Alzheimer's and Brain Tumor detection,
+              An AI-powered MRI diagnosis system for Alzheimer&apos;s and Brain Tumor detection,
               featuring Grad-CAM for explainable AI insights.
             </p>
             <div className='flex  flex-col '>
