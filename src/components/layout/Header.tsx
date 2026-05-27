@@ -3,14 +3,36 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className='w-full font-display bg-[url("/paper.png")] z-50 bg-repeat fixed text-2xl sm:text-3xl lg:text-4xl text-[#9F9F9F] items-center h-16 lg:h-20 bg-transparent flex justify-between px-6 sm:px-12 lg:px-20'>
-      <div>AV</div>
-      <div className='flex gap-4 sm:gap-10'>
-        <Link href='/'>home</Link>
-        <Link href='/about'>about</Link>
-        <Link href='/contact'>contact</Link>
+    <header className='w-full fixed top-0 left-0 z-50 bg-[url("/paper.png")] bg-repeat border-b border-black/5'>
+      <div className='max-w-[80rem] mx-auto flex items-center justify-between px-5 sm:px-10 lg:px-20 h-14 sm:h-16 lg:h-20'>
+        {/* Logo */}
+        <Link href='/' className='font-display text-3xl sm:text-4xl text-[#9F9F9F] leading-none'>
+          AV
+        </Link>
+
+        {/* Nav Links */}
+        <nav className='flex items-center gap-5 sm:gap-8 lg:gap-10'>
+          <Link
+            href='/'
+            className='font-display text-xl sm:text-2xl lg:text-4xl text-[#9F9F9F] hover:text-[#3e3d41] transition-colors duration-200'
+          >
+            home
+          </Link>
+          <Link
+            href='/about'
+            className='font-display text-xl sm:text-2xl lg:text-4xl text-[#9F9F9F] hover:text-[#3e3d41] transition-colors duration-200'
+          >
+            about
+          </Link>
+          <Link
+            href='/contact'
+            className='font-display text-xl sm:text-2xl lg:text-4xl text-[#9F9F9F] hover:text-[#3e3d41] transition-colors duration-200'
+          >
+            contact
+          </Link>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
